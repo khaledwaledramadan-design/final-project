@@ -12,8 +12,9 @@ use Illuminate\Support\Facades\Route;
 
 // 🟢 صفحة البداية
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.register');
 });
+
 
 // 🟢 Dashboard للمستخدم العادي (عرض المقالات + إضافة مقال)
 Route::middleware(['auth', 'verified'])->group(function () {
